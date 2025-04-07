@@ -7,6 +7,7 @@ import MealsLoading from './loading-out';
 
 async function Meals() {
   const data = await getMeals();
+  console.log(new Date(), 'loading meals');
   return <MealsGrid meals={data}/>
 }
 

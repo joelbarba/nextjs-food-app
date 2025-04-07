@@ -16,7 +16,7 @@ export default function Slug({ params }) {
   return <>
     <header className={css.header}>
       <div className={css.image}>
-        <Image src={meal.image} fill />
+        <Image src={meal.image} alt="the meal image" fill />
       </div>
       <div className={css.headerText}>
         <h1>{meal.title}</h1>

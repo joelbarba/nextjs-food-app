@@ -2,6 +2,6 @@ export default function ErrorPage({ error }) {
   // console.log(error);
   return <main className="not-found">
     <h1>Not Found</h1>
-    <p>We coun't find the site</p>
+    <p>We could not find the site</p>
   </main>
 }
