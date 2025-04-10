@@ -8,7 +8,10 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     <article className={css.meal}>
       <header>
         <div className={css.image}>
-          <Image src={image} alt={title} fill />
+          {/* <Image src={image} alt={title} fill /> */}
+          {/* <Image src={`https://jb-default-bucket.s3.amazonaws.com/${image}`} alt={title} fill/> */}
+          {/* <span>image={`https://jb-default-bucket.s3.amazonaws.com/images/${image}`}</span> */}
+          <Image src={`https://jb-default-bucket.s3.amazonaws.com/images/${image}`} alt={title} fill/>
         </div>
         <div className={css.headerText}>
           <h2>{title}</h2>

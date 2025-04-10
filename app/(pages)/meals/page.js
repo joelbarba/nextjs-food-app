@@ -4,6 +4,7 @@ import css from './page.module.css';
 import MealsGrid from '@/app/components/meals/meals-grid';
 import { getMeals } from '@/lib/meals';
 import MealsLoading from './loading-out';
+import Image from 'next/image';
 
 async function Meals() {
   const data = await getMeals();
@@ -24,6 +25,7 @@ export default function MealsPage() {
     </header>
     <main className={css.main}>
       <Suspense fallback={<MealsLoading/>}>
+        {/* <Image src="https://jb-default-bucket.s3.amazonaws.com/images/burger.jpg" alt="image" fill/> */}
         <Meals/>
       </Suspense>
     </main>
