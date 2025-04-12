@@ -4,7 +4,11 @@ import css from './page.module.css';
 import MealsGrid from '@/app/components/meals/meals-grid';
 import { getMeals } from '@/lib/meals';
 import MealsLoading from './loading-out';
-import Image from 'next/image';
+
+export const metadata = {
+  title: 'All meals',
+  description: 'A list of meals',
+};
 
 async function Meals() {
   const data = await getMeals();
